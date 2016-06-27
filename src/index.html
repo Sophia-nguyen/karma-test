@@ -1,0 +1,52 @@
+﻿<html>
+  <head>
+    <title>MyGuestList</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link name="bundle" rel="stylesheet" href="<%= ROOT %>assets/css/bundle.css">
+    <link name="style" rel="stylesheet" href="<%= ROOT %>assets/themes/default.css">
+  </head>
+  <body>
+      <main-app class="main-app">
+          <!--<i class="center-fix main-spinner fa fa-spin fa-spinner"></i>-->
+          <div class="loading-spinner"></div>
+      </main-app>
+
+      <!-- build:js build/assets/bundle.js -->
+      <!-- bower:js -->
+
+      <script src="../node_modules/jquery/dist/jquery.js"></script>
+      <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+      <!-- endinject -->
+      <script src="../node_modules/angular2/bundles/angular2-polyfills.js"></script>
+      <script src="../node_modules/systemjs/dist/system.src.js"></script>
+      <!-- TOTO <thuy> remove -->
+      <script src="../node_modules/string-format/lib/string-format.js"></script>
+      <script src="../node_modules/lodash/lodash.js"></script>
+      <script src="../node_modules/block-ui/jquery.blockUI.js"></script>
+      <script src="../node_modules/moment/moment.js"></script>
+      <script src="../node_modules/moment-timezone/builds/moment-timezone-with-data.js"></script>
+      <script src="../node_modules/prismjs/prism.js"></script>
+      <script src="../node_modules/dropzone/dist/min/dropzone.min.js"></script>
+      <script src="../src/app/components/common/colorPicker/js/materialize-colorpicker.js"></script>
+      <script src="../src/app/components/common/sortable/Sortable.min.js"></script>
+      <script src="../node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+      <script src="../node_modules/pubnub/modern/pubnub.min.js"></script>
+
+      <!-- Please put libraries above this line -->
+      <script src="../node_modules/urlencode/lib/urlencode.js"></script>
+      <!-- endbuild -->
+
+      <!--script src="../node_modules/rxjs/bundles/Rx.js"></script>
+      <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+      <script src="../node_modules/angular2/bundles/angular2.js"></script>
+      <script src="../node_modules/angular2/bundles/router.dev.js"></script>-->
+    
+    <script>
+        System.config(<%= JSON.stringify(SYSTEM_CONFIG) %>);
+
+        System.import('app/Main.js').then(null, console.error.bind(console));
+    </script>
+  </body>
+</html>                                                                                            

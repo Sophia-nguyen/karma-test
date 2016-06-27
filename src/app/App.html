@@ -1,0 +1,14 @@
+<div class="container row">
+    <sidebar *ngIf="hasAccount" class="sidebar-wrapper"></sidebar>
+    <div id="page-content-wrapper">
+        <header *ngIf="hasAccount" (onLogout)="onLogout($event)"></header>
+        <div class="main col s12">
+            <router-outlet></router-outlet>
+        </div>
+
+        <!--<footer>{{ 'footer.lbl.title' | translate }}</footer>-->
+    </div>
+
+    <!--Modal Dialogs will append below-->
+    <div id="modalRegion"></div>
+</div>

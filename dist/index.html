@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>MyGuestList</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link name="bundle" rel="stylesheet" href="dist/assets/css/bundle.css">
+    <link name="style" rel="stylesheet" href="dist/assets/themes/default.css">
+  </head>
+  <body>
+      <main-app class="main-app">
+          <!--<i class="center-fix main-spinner fa fa-spin fa-spinner"></i>-->
+          <div class="loading-spinner"></div>
+      </main-app>
+
+      <!-- build:js build/assets/bundle.js -->
+      <!-- bower:js -->
+
+      <script src="../node_modules/jquery/dist/jquery.js"></script>
+      <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+      <!-- endinject -->
+      <script src="../node_modules/angular2/bundles/angular2-polyfills.js"></script>
+      <script src="../node_modules/systemjs/dist/system.src.js"></script>
+      <!-- TOTO <thuy> remove -->
+      <script src="../node_modules/string-format/lib/string-format.js"></script>
+      <script src="../node_modules/lodash/lodash.js"></script>
+      <script src="../node_modules/block-ui/jquery.blockUI.js"></script>
+      <script src="../node_modules/moment/moment.js"></script>
+      <script src="../node_modules/moment-timezone/builds/moment-timezone-with-data.js"></script>
+      <script src="../node_modules/prismjs/prism.js"></script>
+      <script src="../node_modules/dropzone/dist/min/dropzone.min.js"></script>
+      <script src="../src/app/components/common/colorPicker/js/materialize-colorpicker.js"></script>
+      <script src="../src/app/components/common/sortable/Sortable.min.js"></script>
+      <script src="../node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+      <script src="../node_modules/pubnub/modern/pubnub.min.js"></script>
+
+      <!-- Please put libraries above this line -->
+      <script src="../node_modules/urlencode/lib/urlencode.js"></script>
+      <!-- endbuild -->
+
+      <!--script src="../node_modules/rxjs/bundles/Rx.js"></script>
+      <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+      <script src="../node_modules/angular2/bundles/angular2.js"></script>
+      <script src="../node_modules/angular2/bundles/router.dev.js"></script>-->
+    
+    <script>
+        System.config({"baseURL":"dist/","packages":{"app":{"format":"register","defaultExtension":"js"},"angular2":{"defaultExtension":"js"},"rxjs":{"defaultExtension":"js"},"ng2-translate":{"defaultExtension":"js"},"ng2-pagination":{"defaultExtension":"js"}},"paths":{"angular2/*":"../node_modules/angular2/*","rxjs/*":"../node_modules/rxjs/*","ng2-translate/*":"../node_modules/ng2-translate/*","ng2-pagination/*":"../node_modules/ng2-pagination/*","angular2-materialize":"../node_modules/angular2-materialize/dist/materialize-directive.js","immutable":"../node_modules/immutable/dist/immutable.js","flux":"../node_modules/flux/dist/Flux.js","spectrum":"../node_modules/spectrum-colorpicker/spectrum.js","sass":"../node_modules/sass.js/dist/sass.js","btoa":"../node_modules/btoa/index.js","block-ui":"../node_modules/block-ui/jquery.blockUI.js","js-sha256":"../node_modules/js-sha256/src/sha256.js","crypto-js":"../node_modules/crypto-js/crypto-js.js","urlencode":"../node_modules/urlencode/lib/urlencode.js","io":"../node_modules/socket.io-client/socket.io.js"}});
+
+        System.import('app/Main.js').then(null, console.error.bind(console));
+    </script>
+  </body>
+</html>                                                                                            
