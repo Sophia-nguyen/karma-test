@@ -11,7 +11,7 @@ __karma__.loaded = function() {};
 
 System.config({
     packages: {
-        'base/src/app': {
+        'base/dist/app': {
             defaultExtension: false,
             format: 'register',
             map: Object.keys(window.__karma__.files).
@@ -60,5 +60,5 @@ function onlyAppFiles(filePath) {
 
 
 function onlySpecFiles(path) {
-    return /\.spec\.js$/.test(path);
+    return /_test\.js$/.test(path);
 }
